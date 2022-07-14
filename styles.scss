@@ -2,23 +2,26 @@ body {
     margin: 0;
 }
 
-.container {
-    width: 100vh;
-    margin-bottom: 62px;
-    box-sizing: border-box;
-    
-}
+.main-container {
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    overflow: hidden;
+  }
 
-.container header {
-    background-color: #FFFFFF;
+header {
     padding: 32px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-       
 }
 
-.container h3 {
+.container-1 {
+    height: 448px;
+    margin-bottom: 60px;
+}
+
+.container-1 h3 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -30,7 +33,7 @@ body {
     padding: 0px 32px;
 }
 
-.container h2 {
+.container-1 h2 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -40,7 +43,7 @@ body {
     padding: 0px 32px;
 }
 
-.container p {
+.container-1 p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -48,6 +51,7 @@ body {
     line-height: 150%;
     color: #555555;
     padding: 0px 32px;
+    width: 258px;
 }
 
 .sign-up-container {
@@ -65,25 +69,26 @@ body {
     background-color: #FFFFFF;
     border: 4px solid #000000;
     border-radius: 100px;
-    border-image: url(assets\assets\sign-up-button-remas.png);
+    background-image: url(assets\assets\sign-up-button-remas.png);
     box-sizing: border-box;
     padding: 22px 56px;
 }
 
 .hero-paveiksliuko-container {
-    position: absolute;
-    left: 330px;
-    top: 60px;   
+    position: relative;
+    left: 250px;
+    bottom: 460px;
 }
 
 .hero-paveiksliuko-container img {
-    height: 400px;
+    height: 350px;
 }
 
 .container-spalvotas {
-    background: #C4C4C4;
+    background-color: #C4C4C4;
+    background-image: url(/assets/assets/background.svg);
     margin: 0;
-    padding: 32px;
+    padding: 60px 32px 20px 32px;
 }
 
 .container-spalvotas h2 {
@@ -92,8 +97,6 @@ body {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
-    // display: flex;
-    // align-items: flex-end;
     color: #111111;
 }
 
@@ -107,9 +110,18 @@ body {
 }
 
 .company-names {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    padding: 32px;
+}
+
+.company-names div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex: 0.5;
+    }
+
+.container-sliding {
+    padding: 32px;
 }
 
 .container-sliding h2 {
@@ -118,8 +130,6 @@ body {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
-    display: flex;
-    align-items: flex-end;
     color: #111111;
 }
 
@@ -132,16 +142,105 @@ body {
     color: #555555;
 }
 
+
 .nft-container {
     background-color: #EEEEEE;
-    margin: 50px;
-    // border: ???;
-}
-
-.nft-purple-collumn {
+    width: 290px;
+    height: 400px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.nft-container-left, .nft-container-right {
+    margin: 0;
+    display: flex;
     flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.nft-container-left {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.nft-container-right {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+.nft-container-left :nth-child(1) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FF8139;
+}
+
+.nft-container-left :nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #111111;
+}
+
+.nft-container-left :nth-child(3) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #777777;
+}
+
+.nft-container-right :nth-child(1) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.nft-container-right :nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: right;
+    color: #111111;
+    margin-left: 10px;
+}
+
+.nft-container-right :nth-child(3) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: right;
+    color: #777777;
+}
+
+.container-lady {
+    overflow: hidden;
+    // margin-bottom: 10px;
 }
 
 .container-lady h3 {
@@ -164,6 +263,7 @@ body {
     line-height: 58px;
     color: #111111;
     padding: 0px 32px;
+    width: 274px;
 }
 
 .container-lady p {
@@ -174,12 +274,13 @@ body {
     line-height: 150%;
     color: #555555;
     padding: 0px 32px;
+    width: 207px;
 }
 
 .lady-paveiksliuko-container {
-    position: absolute;
-    left: 400px;
-    top: 2100px;   
+    position: relative;
+    left: 250px;
+    bottom: 400px;   
 }
 
 .lady-paveiksliuko-container img {
@@ -188,7 +289,6 @@ body {
 
 footer {
     padding: 32px;
-    margin-top: 50px;
 }
 
 footer h3 {
@@ -204,10 +304,18 @@ footer h3 {
     margin-left: 10px;
 }
 
-.footer-menu-container {
+.footer-left {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 2;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 
 .copyright {
     font-family: 'Inter', sans-serif;
