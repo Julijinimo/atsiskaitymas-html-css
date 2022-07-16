@@ -1,0 +1,509 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+header {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: none;
+}
+
+.container-1 {
+    height: 448px;
+    margin-bottom: 60px;
+}
+
+.container-1 h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FF3998;
+    padding: 0px 32px;
+}
+
+.container-1 h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #111111;
+    padding: 0px 32px;
+    width: 70%;
+}
+
+.container-1 p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #555555;
+    padding: 0px 32px;
+    width: 258px;
+}
+
+.sign-up-container {
+    padding: 0px 32px;
+}
+
+.sign-up-container button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #111111;
+    background-color: #FFFFFF;
+    background-image: url(/assets/assets/sign-up-button-remas.svg);
+    border: none;
+    padding: 22px 56px;
+}
+
+.hero-paveiksliuko-container {
+    position: relative;
+    left: 250px;
+    bottom: 460px;
+    // width: 50px;
+}
+
+.hero-paveiksliuko-container img {
+    height: 350px;
+    
+}
+
+.container-spalvotas {
+    background-image: url(/assets/assets/background-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 60px 32px 20px 32px;
+
+}
+
+.container-spalvotas h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #111111;
+}
+
+.container-spalvotas p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #111111;
+}
+
+.company-names {
+    padding: 32px;
+}
+
+.company-names div {
+    display: flex;
+}
+
+.company-names div div {
+    width: 75%;
+}
+
+.company-names div div img{
+    width: 75%;
+}
+
+.container-sliding {
+    padding: 0px 32px 32px 32px;
+}
+
+.container-sliding h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #111111;
+}
+
+.container-sliding p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #555555;
+}
+
+a:link, a:visited {
+    color: #555555;
+}
+
+.nft-container-visu {
+    display: flex;
+    overflow: auto;
+}
+
+.nft-container {
+    background-color: #EEEEEE;
+    width: 290px;
+    height: 400px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+}
+
+.nft-container:nth-child(2), .nft-container:nth-child(3), .nft-container:nth-child(4) {
+    margin-left: 30px;
+}
+
+.nft-container-left, .nft-container-right {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.nft-container-left {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.nft-container-right {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+.nft-container-left :nth-child(1) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FF8139;
+}
+
+.nft-container-left :nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #111111;
+}
+
+.nft-container-left :nth-child(3) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #777777;
+}
+
+.nft-container-right :nth-child(1) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: right;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+.nft-container-right :nth-child(2) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: right;
+    color: #111111;
+    margin-left: 10px;
+}
+
+.nft-container-right :nth-child(3) {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: right;
+    color: #777777;
+}
+
+.container-lady {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.container-lady h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FF3998;
+    padding: 0px 32px;
+}
+
+.container-lady h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #111111;
+    padding: 0px 32px;
+    width: 274px;
+}
+
+.container-lady p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #555555;
+    padding: 0px 32px;
+    width: 207px;
+}
+
+.container-lady-img{
+    position: absolute;
+    left: 250px;
+    top: 2000px; 
+}
+
+.container-lady-img img {
+    height: 400px;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 32px;
+}
+
+footer h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #555555;
+}
+
+.social-container img:nth-child(2), img:nth-child(3), img:nth-child(4) {
+    margin-left: 10px;
+}
+
+.footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 140px 30px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 60%;
+    }
+
+    .ul-wrapper:nth-child(2) {
+        padding-right: 10px;
+    }
+    
+    .ul-wrapper h4 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #555555;
+    }
+    
+    .ul-wrapper li {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: #555555;
+        margin-bottom: 15px;
+    }
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.copyright {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #999999;
+    margin-bottom: 60px;
+    padding-left: 32px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .main-container {
+        padding: 32px 100px 0px 100px
+
+    }
+
+    header {
+        margin-bottom: 125px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: contents;
+    }
+
+    .navigation nav {
+        padding-right: 30px;
+    }
+
+    .navigation nav a {
+        margin-right: 10px;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        color: #555555;
+        text-decoration: none;
+    }
+
+    .navigation nav a:nth-child(4) {
+        color: #FF3998;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container-1 h2 {
+        width: 60%;
+    }
+
+    .container-1 p{
+        width: 500px;
+    }
+
+    .hero-paveiksliuko-container {
+        position: static;
+        padding-right: 100px;
+    }
+
+    .hero-paveiksliuko-container img{
+        height: 519px;
+    }
+
+    .container-spalvotas {
+        background-image: url(/assets/assets/background-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 40px;
+        border-radius: 10px;
+        
+    }
+
+    .company-names {
+        display: flex;
+        justify-content: center;
+    }
+
+    .company-names div {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .nft-container-visu {
+        display: flex;
+        justify-content: flex-start;
+        width: 110%;
+        overflow: scroll;
+        margin-bottom: 80px;
+        padding-right: 32px;
+    }
+
+    .container-lady {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container-lady h2 {
+        width: 60%;
+    }
+
+    .container-lady p {
+        width: 500px;
+    }
+
+    .container-lady-img {
+        position: static;
+        padding-right: 300px;
+    }
+
+    .container-lady-img img {
+        height: 600px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-left {
+        padding-right: 60px;
+        width: 590px;
+    }
+
+    .copyright {
+        padding-left: 32px;
+    }
+}
