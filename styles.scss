@@ -46,6 +46,7 @@ header {
     line-height: 58px;
     color: #111111;
     padding: 0px 32px;
+    width: 70%;
 }
 
 .container-1 p {
@@ -72,10 +73,8 @@ header {
     text-align: center;
     color: #111111;
     background-color: #FFFFFF;
-    border: 4px solid #000000;
-    border-radius: 100px;
-    background-image: url(assets\assets\sign-up-button-remas.png);
-    box-sizing: border-box;
+    background-image: url(/assets/assets/sign-up-button-remas.svg);
+    border: none;
     padding: 22px 56px;
 }
 
@@ -83,14 +82,19 @@ header {
     position: relative;
     left: 250px;
     bottom: 460px;
+    // width: 50px;
 }
 
 .hero-paveiksliuko-container img {
     height: 350px;
+    
 }
 
 .container-spalvotas {
     background-image: url(/assets/assets/background-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 60px 32px 20px 32px;
 
@@ -116,10 +120,19 @@ header {
 
 .company-names {
     padding: 32px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
+.company-names div {
+    display: flex;
+}
+
+.company-names div div {
+    width: 75%;
+}
+
+.company-names div div img{
+    width: 75%;
+}
 
 .container-sliding {
     padding: 0px 32px 32px 32px;
@@ -293,12 +306,10 @@ a:link, a:visited {
     position: absolute;
     left: 250px;
     top: 2000px; 
-    overflow: hidden;
 }
 
 .container-lady-img img {
     height: 400px;
-    overflow: hidden;
 }
 
 footer {
@@ -446,7 +457,7 @@ ul {
     }
 
     .company-names div {
-        margin-right: 100px;
+        padding: 0px 30px 0px 30px;
     }
 
     .nft-container-visu {
